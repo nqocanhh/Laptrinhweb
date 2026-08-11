@@ -602,7 +602,7 @@
             <div class="project">
 
                 <h3>
-                    3. Hệ thống đặt lịch tư vấn giảng viên
+                    3. Hệ thống đặt lịch tư vấn/ hẹn gặp giảng viên
                 </h3>
 
                 <strong>
