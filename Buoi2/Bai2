@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền tài liệu</title>
+</head>
+<body>
+
+<form method="post">
+    <input type="text" name="ten" placeholder="Tên tài liệu">
+    
+    <input type="number" name="soluong">
+    
+    <input type="number" name="dongia">
+    
+    <input type="submit" name="tinh" value="Tính">
+</form>
+
+<?php
+if (isset($_POST['tinh'])) {
+    $ten = $_POST['ten'];
+    $soluong = $_POST['soluong'];
+    $dongia = $_POST['dongia'];
+
+    $sotien = $soluong * $dongia;
+
+    echo $ten . ": " . number_format($sotien, 0, ',', '.') . " đ";
+}
+?>
+
+</body>
+</html>
